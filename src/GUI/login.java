@@ -26,21 +26,113 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        login_email = new javax.swing.JTextField();
+        loginpassword = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        login_button = new javax.swing.JButton();
+        show_password_button = new javax.swing.JCheckBox();
+        jLabel5 = new javax.swing.JLabel();
+        signup_button = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        login_email.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                login_emailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(login_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 370, 30));
+
+        loginpassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginpasswordActionPerformed(evt);
+            }
+        });
+        getContentPane().add(loginpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 310, 370, 31));
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setText("Log in");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Email:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Password:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, -1, -1));
+
+        login_button.setBackground(new java.awt.Color(102, 51, 0));
+        login_button.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        login_button.setForeground(new java.awt.Color(255, 255, 255));
+        login_button.setText("LOG IN");
+        login_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                login_buttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(login_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, -1, -1));
+
+        show_password_button.setForeground(new java.awt.Color(255, 255, 255));
+        show_password_button.setText("show password");
+        show_password_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                show_password_buttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(show_password_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("I don't have an account");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 480, -1, 30));
+
+        signup_button.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        signup_button.setText("sign up");
+        signup_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signup_buttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(signup_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 480, -1, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void login_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_emailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_login_emailActionPerformed
+
+    private void loginpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginpasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_loginpasswordActionPerformed
+
+    private void login_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_buttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_login_buttonActionPerformed
+
+    private void signup_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signup_buttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_signup_buttonActionPerformed
+
+    private void show_password_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_show_password_buttonActionPerformed
+ // TODO add your handling code here:
+  if (show_password_button.isSelected()){
+           loginpassword.setEchoChar((char)0);
+        }
+        else {
+           loginpassword.setEchoChar('*');
+        }
+    }//GEN-LAST:event_show_password_buttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +170,15 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton login_button;
+    private javax.swing.JTextField login_email;
+    private javax.swing.JPasswordField loginpassword;
+    private javax.swing.JCheckBox show_password_button;
+    private javax.swing.JButton signup_button;
     // End of variables declaration//GEN-END:variables
 }
