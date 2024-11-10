@@ -128,7 +128,7 @@ public class login extends javax.swing.JFrame {
     {
         JOptionPane.showMessageDialog(null, "Please fill out password");
         // Exit the method to prevent further processing
-    } else if (name.equals("irish") && password.equals("12345678")) 
+    } else if (name.equals("admin") && password.equals("admin")) 
     {
         JOptionPane.showMessageDialog(null, "Log in Successful");
             
