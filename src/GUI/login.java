@@ -53,11 +53,11 @@ public class login extends javax.swing.JFrame {
         LOGIN_text.setText("LOG IN");
         getContentPane().add(LOGIN_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, -1, -1));
 
-        Email_text.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        Email_text.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Email_text.setText("Email:");
         getContentPane().add(Email_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, -1, -1));
 
-        Password_text.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        Password_text.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Password_text.setText("Password:");
         getContentPane().add(Password_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, -1, -1));
 
@@ -86,10 +86,10 @@ public class login extends javax.swing.JFrame {
         });
         getContentPane().add(show_password_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 400, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("I don't have an account");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 500, -1, 30));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 500, -1, 30));
 
         signup_button.setBackground(new java.awt.Color(204, 204, 255));
         signup_button.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N

@@ -28,37 +28,35 @@ public class createclass_button extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         create_button = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(680, 400));
+        setPreferredSize(new java.awt.Dimension(200, 200));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        create_button.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        create_button.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         create_button.setText("Create Class");
+        create_button.setBorder(null);
         create_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 create_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(create_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 330, 160, -1));
+        getContentPane().add(create_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 100, 30));
 
-        jButton2.setText("X");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 20, -1, -1));
-
-        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jButton3.setText("Create Class");
+        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton3.setText("Join Class");
+        jButton3.setBorder(null);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 100, 30));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 430, 240));
 
         pack();
         setLocationRelativeTo(null);
@@ -75,12 +73,11 @@ public class createclass_button extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-       
+        joinClass joinClassFrame  = new joinClass();
+        joinClassFrame.setVisible(true);
+        joinClassFrame.pack();
+        joinClassFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,8 +116,8 @@ public class createclass_button extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton create_button;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
