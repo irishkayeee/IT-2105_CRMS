@@ -28,25 +28,22 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jTabbedPane2" pref="0" max="32767" attributes="0"/>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel1" max="32767" attributes="0"/>
-              <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+          <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jButton1" min="-2" pref="34" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel1" min="-2" pref="102" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" pref="102" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jTabbedPane2" min="-2" pref="474" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane2" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,12 +73,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1045" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="985" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="439" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="452" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -140,12 +137,12 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1039" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="979" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="398" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="415" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -199,12 +196,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1045" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="985" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="439" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="452" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -249,47 +246,28 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" alignment="0" min="-2" pref="376" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jScrollPane2" min="-2" pref="376" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="258" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="464" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="456" max="-2" attributes="0"/>
+                          <EmptySpace pref="270" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane2" min="-2" pref="356" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="358" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="300" max="32767" attributes="0"/>
+                          <EmptySpace pref="88" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel2">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI Black" size="18" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="MISSION: "/>
-                  </Properties>
-                </Component>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane1">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -302,22 +280,14 @@
                         <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Mongolian Baiti" size="14" style="0"/>
+                          <Font name="Mongolian Baiti" size="12" style="0"/>
                         </Property>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="&quot;To equip educational intitutions with a thorough and intuitive &#xa;class record management system that quarantees accurate &#xa;record-keeping, simplifies administrative duties, and offers&#xa;insightful data on student progress&quot;&#xa;"/>
+                        <Property name="text" type="java.lang.String" value="About Class Record Management System&#xa;&#xa;     The Class Record Management System is a comprehensive tool designed to assist&#xa; educational institutions in streamlining their administrative processes.This system simplifies&#xa; record keeping by providing an intuitive platform for managing student data, grades, &#xa;and attendance efficiently.&#xa;&#xa;Purpose and Objectives&#xa;&#xa;     The primary goal of the system is to enhance the accuracy and accessibility of clss records.&#xa; It empowers educators to focus more on teaching while ensuring that essential records are &#xa;maintained securely and professionaly.&#xa;&#xa;MISSION:&#xa;&#xa;     &quot;To equip educational intitutions with a thorough and intuitive class record management&#xa; system that quarantees accurate record-keeping, simplifies administrative duties, and offers&#xa; insightful data on student progress&quot;&#xa;&#xa;VISION:&#xa;&#xa;   &quot;To be a catalyst for an educational future where technology equips educators to personalize learning, streamline record manangement,&#xa;and create a thriving environment for students to succeed.&quot;&#xa;&#xa;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="jLabel3">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI Black" size="18" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="VISION:"/>
-                  </Properties>
-                </Component>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane2">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -330,10 +300,10 @@
                         <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Mongolian Baiti" size="14" style="0"/>
+                          <Font name="Mongolian Baiti" size="12" style="0"/>
                         </Property>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="&quot;To be a catalyst for an educational future where technology equips &#xa;educators to personalize learning, streamline record manangement,&#xa;and create a thriving environment for students to succeed.&quot;"/>
+                        <Property name="text" type="java.lang.String" value="Privacy Policy&#xa;&#xa;    Effective Date: November 16, 2024&#xa;&#xa;    This System is designed to protect the privacy of its users. The data collected includes&#xa;student names, grades, attendance records, and teacher details. System usage data, such as&#xa; logins and activity logs, may also be recorded to maintain functionality and security.&#xa;&#xa;     Collected information is used for managing class records, generating reports, and ensuring&#xa;system operations. Data is shared only with authorized personnel or as reqiored by law.&#xa;It will never be sold or sold to third parties.&#xa;&#xa;      Security measures, including encryption and access controls, are in place to protect data.&#xa;Users are encouraged to safeguard their login credentials. You may request access to your &#xa;data, correct inaccuracies, or have it deleted in accordance with applicable laws.&#xa;&#xa;      Data is retained only for as long as necessary for its intended purpose. Cookies may be &#xa;used to enhance the user experience, and these can be managed through your browser settings.&#xa;This policy may be updated, and significant changes will be communicated.&#xa;&#xa;      For inquiries, please contact the system administrator.&#xa;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -352,15 +322,19 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI Black" size="36" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="CLASSROOM RECORD MANAGEMENT SYSTEM"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Images/banner (3).png"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI Black" size="36" style="1"/>
+          <Font name="Segoe UI Black" size="8" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="+"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Images/plus-small.png"/>
+        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
         </Property>
