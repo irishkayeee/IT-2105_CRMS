@@ -12,6 +12,7 @@ public class signUp extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        role = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -25,8 +26,8 @@ public class signUp extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         showpass_signup = new javax.swing.JCheckBox();
         jLabel8 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        rbTeacher = new javax.swing.JRadioButton();
+        rbStudent = new javax.swing.JRadioButton();
         pass_signup = new javax.swing.JPasswordField();
         jLabel7 = new javax.swing.JLabel();
 
@@ -119,20 +120,22 @@ public class signUp extends javax.swing.JFrame {
         jLabel8.setText("Select your role to get started!");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
 
-        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton1.setText("Teacher");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        role.add(rbTeacher);
+        rbTeacher.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        rbTeacher.setForeground(new java.awt.Color(255, 255, 255));
+        rbTeacher.setText("Teacher");
+        rbTeacher.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                rbTeacherActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, -1, -1));
+        getContentPane().add(rbTeacher, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, -1, -1));
 
-        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton2.setText("Student");
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
+        role.add(rbStudent);
+        rbStudent.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        rbStudent.setForeground(new java.awt.Color(255, 255, 255));
+        rbStudent.setText("Student");
+        getContentPane().add(rbStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
         getContentPane().add(pass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, 360, 30));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
@@ -197,9 +200,9 @@ public class signUp extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void rbTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbTeacherActionPerformed
       
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_rbTeacherActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -221,10 +224,11 @@ public class signUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JTextField lname;
     private javax.swing.JPasswordField pass_signup;
+    private javax.swing.JRadioButton rbStudent;
+    private javax.swing.JRadioButton rbTeacher;
+    private javax.swing.ButtonGroup role;
     private javax.swing.JCheckBox showpass_signup;
     private javax.swing.JTextField upassword;
     // End of variables declaration//GEN-END:variables
