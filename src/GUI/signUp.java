@@ -39,6 +39,9 @@ public class signUp extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         showpass_signup = new javax.swing.JCheckBox();
+        jLabel8 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,23 +50,23 @@ public class signUp extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("SIGN UP");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 120, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, -1, -1));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("First Name: ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 180, -1, -1));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Last Name:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, -1, -1));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Email:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, -1, 20));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, -1, 20));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Password: ");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, -1, 20));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, -1, 20));
 
         fname.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         fname.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +74,7 @@ public class signUp extends javax.swing.JFrame {
                 fnameActionPerformed(evt);
             }
         });
-        getContentPane().add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 358, 30));
+        getContentPane().add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 358, 30));
 
         pass_signup.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         pass_signup.addActionListener(new java.awt.event.ActionListener() {
@@ -79,7 +82,7 @@ public class signUp extends javax.swing.JFrame {
                 pass_signupActionPerformed(evt);
             }
         });
-        getContentPane().add(pass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 410, 358, 30));
+        getContentPane().add(pass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, 358, 30));
 
         uemail.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         uemail.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +90,7 @@ public class signUp extends javax.swing.JFrame {
                 uemailActionPerformed(evt);
             }
         });
-        getContentPane().add(uemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 358, 30));
+        getContentPane().add(uemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 280, 358, 30));
 
         upassword.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         upassword.addActionListener(new java.awt.event.ActionListener() {
@@ -95,23 +98,23 @@ public class signUp extends javax.swing.JFrame {
                 upasswordActionPerformed(evt);
             }
         });
-        getContentPane().add(upassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 340, 358, 30));
+        getContentPane().add(upassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 358, 30));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("I have an account");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 510, 110, 20));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 500, 110, 30));
 
         jButton1.setBackground(new java.awt.Color(102, 51, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Sign Up");
+        jButton1.setText("Submit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 470, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(204, 204, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
@@ -131,11 +134,31 @@ public class signUp extends javax.swing.JFrame {
                 showpass_signupActionPerformed(evt);
             }
         });
-        getContentPane().add(showpass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, -1, -1));
+        getContentPane().add(showpass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 460, -1, -1));
 
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Select your role to get started!");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, -1, -1));
+
+        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jRadioButton1.setText("Teacher");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, -1, -1));
+
+        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jRadioButton2.setText("Student");
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 985, 544));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 550));
 
         pack();
         setLocationRelativeTo(null);
@@ -174,6 +197,10 @@ public class signUp extends javax.swing.JFrame {
         loginFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,6 +248,9 @@ public class signUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JTextField pass_signup;
     private javax.swing.JCheckBox showpass_signup;
     private javax.swing.JTextField uemail;

@@ -48,16 +48,18 @@ public class login extends javax.swing.JFrame {
         });
         getContentPane().add(login_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 370, 31));
 
-        LOGIN_text.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        LOGIN_text.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         LOGIN_text.setForeground(new java.awt.Color(255, 255, 255));
         LOGIN_text.setText("LOG IN");
         getContentPane().add(LOGIN_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, -1, -1));
 
         Email_text.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Email_text.setForeground(new java.awt.Color(255, 255, 255));
         Email_text.setText("Email:");
         getContentPane().add(Email_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, -1, -1));
 
         Password_text.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Password_text.setForeground(new java.awt.Color(255, 255, 255));
         Password_text.setText("Password:");
         getContentPane().add(Password_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, -1, -1));
 
@@ -132,9 +134,6 @@ public class login extends javax.swing.JFrame {
     {
         JOptionPane.showMessageDialog(null, "Log in Successful");
             
-        Role obj= new Role();
-        obj.setVisible(true);
-        dispose();
         }
         else
     {
@@ -164,9 +163,10 @@ public class login extends javax.swing.JFrame {
 
     private void login_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login_buttonMouseClicked
         // TODO add your handling code here:
-        Role obj= new Role();
-        obj.setVisible(true);
-        dispose();
+      Homepage  HomepageFrame  = new  Homepage();
+      HomepageFrame.setVisible(true);
+      HomepageFrame.pack();
+      HomepageFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_login_buttonMouseClicked
 
     /**
