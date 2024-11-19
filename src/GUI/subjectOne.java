@@ -37,7 +37,6 @@ public class subjectOne extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/banner (3).png"))); // NOI18N
-        jLabel1.setPreferredSize(new java.awt.Dimension(985, 100));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
