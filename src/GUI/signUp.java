@@ -158,28 +158,46 @@ public class signUp extends javax.swing.JFrame {
     }//GEN-LAST:event_upasswordActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String firstname = fname.getText().trim();
-        String lastname = lname.getText().trim();
-        String email = upassword.getText().trim();
-        String password = pass_signup.getText().trim();
-       
+                                                                              
+    String firstname = fname.getText().trim();
+    String lastname = lname.getText().trim();
+    String email = upassword.getText().trim();
+    String password = new String(pass_signup.getPassword()).trim(); // Fetch password safely
+    String role;
+        role = null;
+
+    // Determine which role is selected
+    if (rbTeacher.isSelected()) {
+        role = "Teacher";
+    } else if (rbStudent.isSelected()) {
+        role = "Student";
+    }
+
+    // Validation
     if (firstname.isEmpty()) {
-      JOptionPane.showMessageDialog(null, "Please fill out your first name");
-        return; 
+        JOptionPane.showMessageDialog(this, "Please fill out your first name");
+        return;
     }
     if (lastname.isEmpty()) {
-      JOptionPane.showMessageDialog(null, "Please fill out your last name");
+        JOptionPane.showMessageDialog(this, "Please fill out your last name");
         return;
     }
     if (email.isEmpty()) {
-      JOptionPane.showMessageDialog(null, "Please enter your email");
+        JOptionPane.showMessageDialog(this, "Please enter your email");
         return;
     }
     if (password.isEmpty()) {
-      JOptionPane.showMessageDialog(null, "Please enter your password");
+        JOptionPane.showMessageDialog(this, "Please enter your password");
         return;
     }
-      JOptionPane.showMessageDialog(null, "Informations completed!");
+    if (role == null) {
+        JOptionPane.showMessageDialog(this, "Please select a role");
+        return;
+    }
+
+    // Success message
+    JOptionPane.showMessageDialog(this, "Information completed! Role selected: " + role);
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void showpass_signupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showpass_signupActionPerformed

@@ -164,7 +164,25 @@ public class joinClass extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      
+
+    // Get the text from the text field
+    String classCode = jTextField1.getText().trim();
+
+    // Check if the text field is empty
+    if (classCode.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Please enter a code.", "Input Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Check if the code length is between 5 and 7 characters
+    if (classCode.length() < 5 || classCode.length() > 7) {
+        javax.swing.JOptionPane.showMessageDialog(this, "The code must be 5 to 7 characters long.", "Input Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // If the code is valid, proceed with further actions (e.g., join the class)
+    javax.swing.JOptionPane.showMessageDialog(this, "Class joined successfully!", "Success", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     public static void main(String args[]) {

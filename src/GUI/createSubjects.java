@@ -1,5 +1,7 @@
 package GUI;
 
+import javax.swing.JOptionPane;
+
 public class createSubjects extends javax.swing.JFrame {
 
     public createSubjects() {
@@ -94,7 +96,23 @@ public class createSubjects extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+
+    // Get values from text fields
+    String className = jTextField5.getText().trim();
+    String section = jTextField8.getText().trim();
+    String subject = jTextField6.getText().trim();
+    String room = jTextField7.getText().trim();
+
+    // Check if any field is empty
+    if (className.isEmpty() || section.isEmpty() || subject.isEmpty() || room.isEmpty()) {
+        // Show popup message
+        JOptionPane.showMessageDialog(this, "Please fill out all necessary information", "Input Error", JOptionPane.ERROR_MESSAGE);
+    } else {
+        // Proceed with form submission (add your logic here)
+        JOptionPane.showMessageDialog(this, "Class created successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
+        // Add your database or additional logic here
+    }
+    
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -109,9 +127,6 @@ public class createSubjects extends javax.swing.JFrame {
         });
     }
 
-    void SetVisible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -128,4 +143,6 @@ public class createSubjects extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
+
+
 }
