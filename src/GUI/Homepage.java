@@ -32,22 +32,17 @@ public class Homepage extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         about_button = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        mission_panel = new javax.swing.JPanel();
+        mission_button = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
-        jPanel12 = new javax.swing.JPanel();
+        vission_button = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
+        privacy_button = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        aboutinfo_panel = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        jp1 = new javax.swing.JPanel();
+        jp2 = new javax.swing.JPanel();
+        jp3 = new javax.swing.JPanel();
+        jp4 = new javax.swing.JPanel();
         todo_panel = new javax.swing.JPanel();
         notifications_panel = new javax.swing.JPanel();
         Subjects_panels = new javax.swing.JPanel();
@@ -284,61 +279,79 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        mission_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                mission_buttonMouseClicked(evt);
+            }
+        });
+
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setText("Mission");
 
-        javax.swing.GroupLayout mission_panelLayout = new javax.swing.GroupLayout(mission_panel);
-        mission_panel.setLayout(mission_panelLayout);
-        mission_panelLayout.setHorizontalGroup(
-            mission_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mission_panelLayout.createSequentialGroup()
+        javax.swing.GroupLayout mission_buttonLayout = new javax.swing.GroupLayout(mission_button);
+        mission_button.setLayout(mission_buttonLayout);
+        mission_buttonLayout.setHorizontalGroup(
+            mission_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mission_buttonLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel11)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
-        mission_panelLayout.setVerticalGroup(
-            mission_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mission_panelLayout.createSequentialGroup()
+        mission_buttonLayout.setVerticalGroup(
+            mission_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mission_buttonLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel11)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        vission_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vission_buttonMouseClicked(evt);
+            }
+        });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel12.setText("Vission");
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
+        javax.swing.GroupLayout vission_buttonLayout = new javax.swing.GroupLayout(vission_button);
+        vission_button.setLayout(vission_buttonLayout);
+        vission_buttonLayout.setHorizontalGroup(
+            vission_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(vission_buttonLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel12)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
+        vission_buttonLayout.setVerticalGroup(
+            vission_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(vission_buttonLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel12)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        privacy_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                privacy_buttonMouseClicked(evt);
+            }
+        });
+
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("Privacy");
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        javax.swing.GroupLayout privacy_buttonLayout = new javax.swing.GroupLayout(privacy_button);
+        privacy_button.setLayout(privacy_buttonLayout);
+        privacy_buttonLayout.setHorizontalGroup(
+            privacy_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(privacy_buttonLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel13)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        privacy_buttonLayout.setVerticalGroup(
+            privacy_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(privacy_buttonLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel13)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -352,11 +365,11 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(about_button, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mission_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mission_button, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(vission_button, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(privacy_button, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(438, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -365,158 +378,77 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(about_button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(mission_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mission_button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(privacy_button, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(vission_button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         about_panel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 750, -1));
 
-        jPanel6.setBackground(new java.awt.Color(255, 204, 204));
+        jp1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jPanel7.setBackground(new java.awt.Color(255, 255, 204));
-
-        jPanel8.setBackground(new java.awt.Color(204, 204, 255));
-
-        aboutinfo_panel.setBackground(new java.awt.Color(255, 255, 255));
-
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jTextField1.setText("Purpose and Objectives");
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jTextField2.setText("                It is a  comprehensive tool designed to assist  educational institutions in streamlining their administrative processes. This system  ");
-        jTextField2.setBorder(null);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-
-        jTextField3.setText("simplifies record keeping by providing an intuitive platform for managing students, data, grades, and records efficiently. ");
-        jTextField3.setBorder(null);
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jTextField4.setText("About Class Record Management System");
-        jTextField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
-
-        jTextField5.setText("                The primary goal of the system is to enhance the accuracy and accessibility of class records. It empowers educators to focus more");
-        jTextField5.setBorder(null);
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
-
-        jTextField6.setText("on teaching while ensuring that essential records are  maintained securely and professionaly.");
-        jTextField6.setBorder(null);
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout aboutinfo_panelLayout = new javax.swing.GroupLayout(aboutinfo_panel);
-        aboutinfo_panel.setLayout(aboutinfo_panelLayout);
-        aboutinfo_panelLayout.setHorizontalGroup(
-            aboutinfo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                .addGroup(aboutinfo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(aboutinfo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3)
-                            .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                                .addGroup(aboutinfo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField2))
-                    .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(aboutinfo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 724, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE))))
-                .addContainerGap())
+        javax.swing.GroupLayout jp1Layout = new javax.swing.GroupLayout(jp1);
+        jp1.setLayout(jp1Layout);
+        jp1Layout.setHorizontalGroup(
+            jp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
-        aboutinfo_panelLayout.setVerticalGroup(
-            aboutinfo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(aboutinfo_panelLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+        jp1Layout.setVerticalGroup(
+            jp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(aboutinfo_panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel6.add(jp1);
+
+        jp2.setBackground(new java.awt.Color(255, 204, 204));
+
+        javax.swing.GroupLayout jp2Layout = new javax.swing.GroupLayout(jp2);
+        jp2.setLayout(jp2Layout);
+        jp2Layout.setHorizontalGroup(
+            jp2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(aboutinfo_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        jp2Layout.setVerticalGroup(
+            jp2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel6.add(jp2);
+
+        jp3.setBackground(new java.awt.Color(255, 153, 255));
+
+        javax.swing.GroupLayout jp3Layout = new javax.swing.GroupLayout(jp3);
+        jp3.setLayout(jp3Layout);
+        jp3Layout.setHorizontalGroup(
+            jp3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jp3Layout.setVerticalGroup(
+            jp3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        jPanel6.add(jp3);
+
+        jp4.setBackground(new java.awt.Color(204, 204, 0));
+
+        javax.swing.GroupLayout jp4Layout = new javax.swing.GroupLayout(jp4);
+        jp4.setLayout(jp4Layout);
+        jp4Layout.setHorizontalGroup(
+            jp4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jp4Layout.setVerticalGroup(
+            jp4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
 
-        about_panel.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 220, 760, 220));
+        jPanel6.add(jp4);
+
+        about_panel.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 750, 220));
 
         todo_panel.setBackground(new java.awt.Color(102, 204, 0));
         todo_panel.setPreferredSize(new java.awt.Dimension(803, 462));
@@ -740,33 +672,33 @@ public class Homepage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_subjectbtn4ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
-
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
-
     private void about_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_about_buttonMouseClicked
-        aboutinfo_panel.setVisible(true);
+            jp1.setVisible(true);
+            jp2.setVisible(false);
+            jp3.setVisible(false);
+            jp4.setVisible(false);
     }//GEN-LAST:event_about_buttonMouseClicked
+
+    private void mission_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mission_buttonMouseClicked
+            jp2.setVisible(true);
+            jp1.setVisible(false);
+            jp3.setVisible(false);
+            jp4.setVisible(false);
+    }//GEN-LAST:event_mission_buttonMouseClicked
+
+    private void vission_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vission_buttonMouseClicked
+            jp3.setVisible(true);
+            jp1.setVisible(false);
+            jp2.setVisible(false);
+            jp4.setVisible(false);
+    }//GEN-LAST:event_vission_buttonMouseClicked
+
+    private void privacy_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_privacy_buttonMouseClicked
+            jp4.setVisible(true);
+            jp1.setVisible(false);
+            jp2.setVisible(false);
+            jp3.setVisible(false);
+    }//GEN-LAST:event_privacy_buttonMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -807,7 +739,6 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JPanel about;
     private javax.swing.JPanel about_button;
     private javax.swing.JPanel about_panel;
-    private javax.swing.JPanel aboutinfo_panel;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -823,24 +754,19 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JPanel mission_panel;
+    private javax.swing.JPanel jp1;
+    private javax.swing.JPanel jp2;
+    private javax.swing.JPanel jp3;
+    private javax.swing.JPanel jp4;
+    private javax.swing.JPanel mission_button;
     private javax.swing.JPanel notifications;
     private javax.swing.JPanel notifications_panel;
+    private javax.swing.JPanel privacy_button;
     private javax.swing.JButton subjectbtn1;
     private javax.swing.JButton subjectbtn2;
     private javax.swing.JButton subjectbtn3;
@@ -851,5 +777,6 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JButton subjectbtn8;
     private javax.swing.JPanel to_do;
     private javax.swing.JPanel todo_panel;
+    private javax.swing.JPanel vission_button;
     // End of variables declaration//GEN-END:variables
 }
