@@ -31,6 +31,14 @@ public class Homepage extends javax.swing.JFrame {
         todo_panel = new javax.swing.JPanel();
         notifications_panel = new javax.swing.JPanel();
         Subjects_panels = new javax.swing.JPanel();
+        subjectbtn6 = new javax.swing.JButton();
+        subjectbtn5 = new javax.swing.JButton();
+        subjectbtn3 = new javax.swing.JButton();
+        subjectbtn7 = new javax.swing.JButton();
+        subjectbtn1 = new javax.swing.JButton();
+        subjectbtn2 = new javax.swing.JButton();
+        subjectbtn4 = new javax.swing.JButton();
+        subjectbtn8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,7 +67,7 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("Subjects");
 
@@ -74,7 +82,7 @@ public class Homepage extends javax.swing.JFrame {
         );
         SubjectsLayout.setVerticalGroup(
             SubjectsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         to_do.setBackground(new java.awt.Color(247, 247, 247));
@@ -85,7 +93,7 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("To do");
 
@@ -100,7 +108,7 @@ public class Homepage extends javax.swing.JFrame {
         );
         to_doLayout.setVerticalGroup(
             to_doLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         notifications.setBackground(new java.awt.Color(247, 247, 247));
@@ -111,7 +119,7 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("Notifications");
 
@@ -121,15 +129,15 @@ public class Homepage extends javax.swing.JFrame {
             notificationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, notificationsLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
+                .addComponent(jLabel4)
+                .addGap(43, 43, 43))
         );
         notificationsLayout.setVerticalGroup(
             notificationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
         );
 
-        about.setBackground(new java.awt.Color(247, 247, 247));
+        about.setBackground(new java.awt.Color(255, 255, 255));
         about.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true));
         about.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -137,7 +145,7 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 102, 102));
         jLabel5.setText("About");
 
@@ -171,12 +179,12 @@ public class Homepage extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(notifications, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(to_do, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(Subjects, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -184,8 +192,8 @@ public class Homepage extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Subjects, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(to_do, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -193,7 +201,7 @@ public class Homepage extends javax.swing.JFrame {
                 .addComponent(notifications, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(about, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(210, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 204, 204));
@@ -222,11 +230,11 @@ public class Homepage extends javax.swing.JFrame {
         todo_panel.setLayout(todo_panelLayout);
         todo_panelLayout.setHorizontalGroup(
             todo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 747, Short.MAX_VALUE)
+            .addGap(0, 803, Short.MAX_VALUE)
         );
         todo_panelLayout.setVerticalGroup(
             todo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
+            .addGap(0, 462, Short.MAX_VALUE)
         );
 
         notifications_panel.setBackground(new java.awt.Color(204, 204, 204));
@@ -236,32 +244,105 @@ public class Homepage extends javax.swing.JFrame {
         notifications_panel.setLayout(notifications_panelLayout);
         notifications_panelLayout.setHorizontalGroup(
             notifications_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 980, Short.MAX_VALUE)
+            .addGap(0, 803, Short.MAX_VALUE)
         );
         notifications_panelLayout.setVerticalGroup(
             notifications_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 440, Short.MAX_VALUE)
+            .addGap(0, 462, Short.MAX_VALUE)
         );
 
         Subjects_panels.setBackground(new java.awt.Color(255, 255, 255));
-        Subjects_panels.setPreferredSize(new java.awt.Dimension(803, 462));
+        Subjects_panels.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        Subjects_panels.setPreferredSize(new java.awt.Dimension(985, 544));
+        Subjects_panels.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Subjects_panelsLayout = new javax.swing.GroupLayout(Subjects_panels);
-        Subjects_panels.setLayout(Subjects_panelsLayout);
-        Subjects_panelsLayout.setHorizontalGroup(
-            Subjects_panelsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        Subjects_panelsLayout.setVerticalGroup(
-            Subjects_panelsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
+        subjectbtn6.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn6.setText("OOP");
+        subjectbtn6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        subjectbtn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectbtn6ActionPerformed(evt);
+            }
+        });
+        Subjects_panels.add(subjectbtn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, 140));
+
+        subjectbtn5.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn5.setText("PHYSICS");
+        subjectbtn5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        subjectbtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectbtn5ActionPerformed(evt);
+            }
+        });
+        Subjects_panels.add(subjectbtn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 130, 140));
+
+        subjectbtn3.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn3.setText("DBMS");
+        subjectbtn3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn3.setPreferredSize(new java.awt.Dimension(100, 100));
+        subjectbtn3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        subjectbtn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectbtn3ActionPerformed(evt);
+            }
+        });
+        Subjects_panels.add(subjectbtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, 130, 140));
+
+        subjectbtn7.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn7.setText("ASEAN");
+        subjectbtn7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn7.setPreferredSize(new java.awt.Dimension(100, 100));
+        subjectbtn7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        Subjects_panels.add(subjectbtn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 130, 140));
+
+        subjectbtn1.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn1.setText("ADV.COMPROG");
+        subjectbtn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn1.setPreferredSize(new java.awt.Dimension(100, 100));
+        subjectbtn1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        Subjects_panels.add(subjectbtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 130, 140));
+
+        subjectbtn2.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn2.setText("NETWORKING");
+        subjectbtn2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn2.setPreferredSize(new java.awt.Dimension(100, 100));
+        subjectbtn2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        subjectbtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectbtn2ActionPerformed(evt);
+            }
+        });
+        Subjects_panels.add(subjectbtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 130, 140));
+
+        subjectbtn4.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn4.setText("P.E");
+        subjectbtn4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn4.setPreferredSize(new java.awt.Dimension(100, 100));
+        subjectbtn4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        Subjects_panels.add(subjectbtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 130, 140));
+
+        subjectbtn8.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        subjectbtn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
+        subjectbtn8.setText("DISCRETE MATH");
+        subjectbtn8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        subjectbtn8.setPreferredSize(new java.awt.Dimension(100, 100));
+        subjectbtn8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        Subjects_panels.add(subjectbtn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 130, 140));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Subjects_panels, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
+            .addComponent(Subjects_panels, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(notifications_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -339,6 +420,22 @@ public class Homepage extends javax.swing.JFrame {
       createclass_buttonFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void subjectbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subjectbtn6ActionPerformed
+
+    private void subjectbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subjectbtn2ActionPerformed
+
+    private void subjectbtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subjectbtn3ActionPerformed
+
+    private void subjectbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subjectbtn5ActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -392,6 +489,14 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel notifications;
     private javax.swing.JPanel notifications_panel;
+    private javax.swing.JButton subjectbtn1;
+    private javax.swing.JButton subjectbtn2;
+    private javax.swing.JButton subjectbtn3;
+    private javax.swing.JButton subjectbtn4;
+    private javax.swing.JButton subjectbtn5;
+    private javax.swing.JButton subjectbtn6;
+    private javax.swing.JButton subjectbtn7;
+    private javax.swing.JButton subjectbtn8;
     private javax.swing.JPanel to_do;
     private javax.swing.JPanel todo_panel;
     // End of variables declaration//GEN-END:variables

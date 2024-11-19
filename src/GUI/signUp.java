@@ -29,7 +29,7 @@ public class signUp extends javax.swing.JFrame {
         rbTeacher = new javax.swing.JRadioButton();
         rbStudent = new javax.swing.JRadioButton();
         pass_signup = new javax.swing.JPasswordField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -138,8 +138,8 @@ public class signUp extends javax.swing.JFrame {
         getContentPane().add(rbStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
         getContentPane().add(pass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, 360, 30));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 550));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 985, 544));
 
         pack();
         setLocationRelativeTo(null);
@@ -205,10 +205,8 @@ public class signUp extends javax.swing.JFrame {
     }//GEN-LAST:event_rbTeacherActionPerformed
 
     public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new signUp().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new signUp().setVisible(true);
         });
     }
 
@@ -222,8 +220,8 @@ public class signUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField lname;
     private javax.swing.JPasswordField pass_signup;
     private javax.swing.JRadioButton rbStudent;

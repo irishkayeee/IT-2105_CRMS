@@ -66,10 +66,8 @@ public class createclass_button extends javax.swing.JFrame {
 
     public static void main(String args[]) {
         
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new createclass_button().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new createclass_button().setVisible(true);
         });
     }
 
