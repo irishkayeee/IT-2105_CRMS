@@ -67,6 +67,17 @@ public class Homepage extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         todo_panel = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        assignedtab = new javax.swing.JPanel();
+        assignedbtn = new javax.swing.JLabel();
+        missingtab = new javax.swing.JPanel();
+        missingbtn = new javax.swing.JLabel();
+        donetab = new javax.swing.JPanel();
+        donebtn = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        assignedpanel = new javax.swing.JPanel();
+        missingpanel = new javax.swing.JPanel();
+        donepanel = new javax.swing.JPanel();
         notifications_panel = new javax.swing.JPanel();
         Subjects_panels = new javax.swing.JPanel();
         subjectbtn6 = new javax.swing.JButton();
@@ -273,6 +284,8 @@ public class Homepage extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(0, 102, 102));
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 51, 0), null));
 
+        about_button.setBackground(new java.awt.Color(0, 102, 102));
+        about_button.setForeground(new java.awt.Color(255, 255, 255));
         about_button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 about_buttonMouseClicked(evt);
@@ -280,6 +293,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("About");
 
         javax.swing.GroupLayout about_buttonLayout = new javax.swing.GroupLayout(about_button);
@@ -299,6 +313,8 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        mission_button.setBackground(new java.awt.Color(0, 102, 102));
+        mission_button.setForeground(new java.awt.Color(255, 255, 255));
         mission_button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mission_buttonMouseClicked(evt);
@@ -306,6 +322,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Mission");
 
         javax.swing.GroupLayout mission_buttonLayout = new javax.swing.GroupLayout(mission_button);
@@ -325,6 +342,8 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        vission_button.setBackground(new java.awt.Color(0, 102, 102));
+        vission_button.setForeground(new java.awt.Color(255, 255, 255));
         vission_button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 vission_buttonMouseClicked(evt);
@@ -332,6 +351,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Vision");
 
         javax.swing.GroupLayout vission_buttonLayout = new javax.swing.GroupLayout(vission_button);
@@ -351,6 +371,8 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        privacy_button.setBackground(new java.awt.Color(0, 102, 102));
+        privacy_button.setForeground(new java.awt.Color(255, 255, 255));
         privacy_button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 privacy_buttonMouseClicked(evt);
@@ -358,6 +380,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Privacy");
 
         javax.swing.GroupLayout privacy_buttonLayout = new javax.swing.GroupLayout(privacy_button);
@@ -645,18 +668,189 @@ public class Homepage extends javax.swing.JFrame {
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.png"))); // NOI18N
         about_panel.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 200, 90));
 
-        todo_panel.setBackground(new java.awt.Color(102, 204, 0));
+        todo_panel.setBackground(new java.awt.Color(255, 255, 255));
         todo_panel.setPreferredSize(new java.awt.Dimension(985, 544));
+
+        jPanel7.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel7.setPreferredSize(new java.awt.Dimension(750, 44));
+
+        assignedtab.setBackground(null);
+        assignedtab.setForeground(new java.awt.Color(255, 255, 255));
+        assignedtab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                assignedtabMouseClicked(evt);
+            }
+        });
+
+        assignedbtn.setBackground(new java.awt.Color(0, 102, 102));
+        assignedbtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        assignedbtn.setForeground(new java.awt.Color(255, 255, 255));
+        assignedbtn.setText("Assigned");
+        assignedbtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                assignedbtnMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignedtabLayout = new javax.swing.GroupLayout(assignedtab);
+        assignedtab.setLayout(assignedtabLayout);
+        assignedtabLayout.setHorizontalGroup(
+            assignedtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, assignedtabLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(assignedbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignedtabLayout.setVerticalGroup(
+            assignedtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignedtabLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(assignedbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        missingtab.setBackground(null);
+        missingtab.setForeground(new java.awt.Color(255, 255, 255));
+
+        missingbtn.setBackground(new java.awt.Color(0, 102, 102));
+        missingbtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        missingbtn.setForeground(new java.awt.Color(255, 255, 255));
+        missingbtn.setText("Missing");
+        missingbtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                missingbtnMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout missingtabLayout = new javax.swing.GroupLayout(missingtab);
+        missingtab.setLayout(missingtabLayout);
+        missingtabLayout.setHorizontalGroup(
+            missingtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, missingtabLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(missingbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        missingtabLayout.setVerticalGroup(
+            missingtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(missingtabLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(missingbtn, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        donetab.setBackground(null);
+        donetab.setForeground(new java.awt.Color(255, 255, 255));
+        donetab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                donetabMouseClicked(evt);
+            }
+        });
+
+        donebtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        donebtn.setForeground(new java.awt.Color(255, 255, 255));
+        donebtn.setText("Done");
+
+        javax.swing.GroupLayout donetabLayout = new javax.swing.GroupLayout(donetab);
+        donetab.setLayout(donetabLayout);
+        donetabLayout.setHorizontalGroup(
+            donetabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, donetabLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(donebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        donetabLayout.setVerticalGroup(
+            donetabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(donetabLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(donebtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(assignedtab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(missingtab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(donetab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(assignedtab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(missingtab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(donetab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel11.setLayout(new javax.swing.OverlayLayout(jPanel11));
+
+        assignedpanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout assignedpanelLayout = new javax.swing.GroupLayout(assignedpanel);
+        assignedpanel.setLayout(assignedpanelLayout);
+        assignedpanelLayout.setHorizontalGroup(
+            assignedpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+        assignedpanelLayout.setVerticalGroup(
+            assignedpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 521, Short.MAX_VALUE)
+        );
+
+        jPanel11.add(assignedpanel);
+
+        missingpanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout missingpanelLayout = new javax.swing.GroupLayout(missingpanel);
+        missingpanel.setLayout(missingpanelLayout);
+        missingpanelLayout.setHorizontalGroup(
+            missingpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+        missingpanelLayout.setVerticalGroup(
+            missingpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 521, Short.MAX_VALUE)
+        );
+
+        jPanel11.add(missingpanel);
+
+        donepanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout donepanelLayout = new javax.swing.GroupLayout(donepanel);
+        donepanel.setLayout(donepanelLayout);
+        donepanelLayout.setHorizontalGroup(
+            donepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+        donepanelLayout.setVerticalGroup(
+            donepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 521, Short.MAX_VALUE)
+        );
+
+        jPanel11.add(donepanel);
 
         javax.swing.GroupLayout todo_panelLayout = new javax.swing.GroupLayout(todo_panel);
         todo_panel.setLayout(todo_panelLayout);
         todo_panelLayout.setHorizontalGroup(
             todo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         todo_panelLayout.setVerticalGroup(
             todo_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 442, Short.MAX_VALUE)
+            .addGroup(todo_panelLayout.createSequentialGroup()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         notifications_panel.setBackground(new java.awt.Color(204, 204, 204));
@@ -895,6 +1089,31 @@ public class Homepage extends javax.swing.JFrame {
             jp3.setVisible(false);
     }//GEN-LAST:event_privacy_buttonMouseClicked
 
+    private void assignedbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignedbtnMouseClicked
+        // TODO add your handling code here
+        assignedpanel.setVisible(true);
+        missingpanel.setVisible(false);
+        donepanel.setVisible(false);
+        
+    }//GEN-LAST:event_assignedbtnMouseClicked
+
+    private void missingbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_missingbtnMouseClicked
+        // TODO add your handling code here:
+        assignedpanel.setVisible(false);
+        missingpanel.setVisible(true);
+        donepanel.setVisible(false);
+    }//GEN-LAST:event_missingbtnMouseClicked
+
+    private void assignedtabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignedtabMouseClicked
+        
+    }//GEN-LAST:event_assignedtabMouseClicked
+
+    private void donetabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_donetabMouseClicked
+        assignedpanel.setVisible(false);
+        missingpanel.setVisible(false);
+        donepanel.setVisible(true);
+    }//GEN-LAST:event_donetabMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -934,6 +1153,12 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JPanel about;
     private javax.swing.JPanel about_button;
     private javax.swing.JPanel about_panel;
+    private javax.swing.JLabel assignedbtn;
+    private javax.swing.JPanel assignedpanel;
+    private javax.swing.JPanel assignedtab;
+    private javax.swing.JLabel donebtn;
+    private javax.swing.JPanel donepanel;
+    private javax.swing.JPanel donetab;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -972,15 +1197,20 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jp1;
     private javax.swing.JPanel jp2;
     private javax.swing.JPanel jp3;
     private javax.swing.JPanel jp4;
+    private javax.swing.JLabel missingbtn;
+    private javax.swing.JPanel missingpanel;
+    private javax.swing.JPanel missingtab;
     private javax.swing.JPanel mission_button;
     private javax.swing.JPanel notifications;
     private javax.swing.JPanel notifications_panel;
