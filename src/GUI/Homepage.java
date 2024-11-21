@@ -110,7 +110,7 @@ public class Homepage extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 988, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 990, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,6 +118,7 @@ public class Homepage extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         Subjects.setBackground(new java.awt.Color(247, 247, 247));
         Subjects.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true));
@@ -671,6 +672,7 @@ public class Homepage extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(0, 102, 102));
         jPanel7.setPreferredSize(new java.awt.Dimension(750, 44));
 
+        assignedtab.setBackground(new java.awt.Color(0, 102, 102));
         assignedtab.setForeground(new java.awt.Color(255, 255, 255));
         assignedtab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -705,6 +707,7 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        missingtab.setBackground(new java.awt.Color(0, 102, 102));
         missingtab.setForeground(new java.awt.Color(255, 255, 255));
 
         missingbtn.setBackground(new java.awt.Color(0, 102, 102));
@@ -734,6 +737,7 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        donetab.setBackground(new java.awt.Color(0, 102, 102));
         donetab.setForeground(new java.awt.Color(255, 255, 255));
         donetab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

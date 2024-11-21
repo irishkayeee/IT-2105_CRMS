@@ -15,7 +15,7 @@ public class DB {
 
     private static final String serverName = "localhost";
     private static final String userName = "root";
-    private static final String dbName = "classroom_record_management_sys";
+    private static final String dbName = "classroom_system_database";
     private static final int portNumber = 3306;
     private static final String pass = ""; 
 
