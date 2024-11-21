@@ -1,13 +1,41 @@
 package GUI;
 
+import Classes.Signup;
+import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
+
+import javax.swing.JOptionPane;
+
 
 public class signUp extends javax.swing.JFrame {
 
+     Signup signup = new Signup();
+
     public signUp() {
         initComponents();
+        
+        ButtonGroup btn_group = new ButtonGroup();
+        btn_group.add(rbTeacher);
+        btn_group.add(rbStudent);
+        
     }
+    
+    public boolean verify()
+    { 
+        String email = jTextField_email.getText();
+        String password = jTextField_password.getText();
 
+        if(!email.trim().equals("") && !password.trim().equals(""))
+        {
+            return true;
+        }
+        else 
+        {
+            JOptionPane.showMessageDialog(null , "Enter all the necessary information" , "Invalid Information", 2);
+             return false;
+        }
+    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -18,9 +46,9 @@ public class signUp extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        fname = new javax.swing.JTextField();
-        lname = new javax.swing.JTextField();
-        upassword = new javax.swing.JTextField();
+        jTextField_firstName = new javax.swing.JTextField();
+        jTextField_lastName = new javax.swing.JTextField();
+        jTextField_email = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -28,7 +56,7 @@ public class signUp extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         rbTeacher = new javax.swing.JRadioButton();
         rbStudent = new javax.swing.JRadioButton();
-        pass_signup = new javax.swing.JPasswordField();
+        jTextField_password = new javax.swing.JPasswordField();
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -55,29 +83,29 @@ public class signUp extends javax.swing.JFrame {
         jLabel5.setText("Password: ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, -1, 20));
 
-        fname.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        fname.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_firstName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jTextField_firstName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fnameActionPerformed(evt);
+                jTextField_firstNameActionPerformed(evt);
             }
         });
-        getContentPane().add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 358, 30));
+        getContentPane().add(jTextField_firstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 358, 30));
 
-        lname.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        lname.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_lastName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jTextField_lastName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lnameActionPerformed(evt);
+                jTextField_lastNameActionPerformed(evt);
             }
         });
-        getContentPane().add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 280, 358, 30));
+        getContentPane().add(jTextField_lastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 280, 358, 30));
 
-        upassword.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        upassword.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_email.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jTextField_email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                upasswordActionPerformed(evt);
+                jTextField_emailActionPerformed(evt);
             }
         });
-        getContentPane().add(upassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 358, 30));
+        getContentPane().add(jTextField_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 358, 30));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -136,7 +164,7 @@ public class signUp extends javax.swing.JFrame {
         rbStudent.setForeground(new java.awt.Color(255, 255, 255));
         rbStudent.setText("Student");
         getContentPane().add(rbStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
-        getContentPane().add(pass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, 360, 30));
+        getContentPane().add(jTextField_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, 360, 30));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 985, 544));
@@ -145,67 +173,58 @@ public class signUp extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void fnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fnameActionPerformed
+    private void jTextField_firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_firstNameActionPerformed
 
-    }//GEN-LAST:event_fnameActionPerformed
+    }//GEN-LAST:event_jTextField_firstNameActionPerformed
 
-    private void lnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnameActionPerformed
+    private void jTextField_lastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_lastNameActionPerformed
 
-    }//GEN-LAST:event_lnameActionPerformed
+    }//GEN-LAST:event_jTextField_lastNameActionPerformed
 
-    private void upasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upasswordActionPerformed
+    private void jTextField_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_emailActionPerformed
      
-    }//GEN-LAST:event_upasswordActionPerformed
+    }//GEN-LAST:event_jTextField_emailActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-                                                                              
-    String firstname = fname.getText().trim();
-    String lastname = lname.getText().trim();
-    String email = upassword.getText().trim();
-    String password = new String(pass_signup.getPassword()).trim(); // Fetch password safely
-    String role;
-        role = null;
+                                                                     
+        String firstName = "";
+        String lastName = "";
+        String email = "";
+        String password = "";
+        String role_ = null; 
 
-    // Determine which role is selected
+    try {
+        firstName = jTextField_firstName.getText();
+        lastName = jTextField_lastName.getText();
+        email = jTextField_email.getText();
+        password = jTextField_password.getText();
+
     if (rbTeacher.isSelected()) {
-        role = "Teacher";
+        role_ = "Teacher";
     } else if (rbStudent.isSelected()) {
-        role = "Student";
+        role_ = "Student";
+    } else {
+        
+        throw new Exception("No role selected");
+    }
+    } catch (Exception ex) {
+        JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage(), "Invalid Role", JOptionPane.ERROR_MESSAGE);
     }
 
-    // Validation
-    if (firstname.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Please fill out your first name");
-        return;
+// Proceed only if all inputs are valid and a role is set
+    if (verify() && role_ != null) {
+        Signup signup = new Signup();
+        signup.createAccount(firstName, lastName, email, password, role_);
     }
-    if (lastname.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Please fill out your last name");
-        return;
-    }
-    if (email.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Please enter your email");
-        return;
-    }
-    if (password.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Please enter your password");
-        return;
-    }
-    if (role == null) {
-        JOptionPane.showMessageDialog(this, "Please select a role");
-        return;
-    }
-
-    // Success message
-    JOptionPane.showMessageDialog(this, "Information completed! Role selected: " + role);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void showpass_signupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showpass_signupActionPerformed
          if (showpass_signup.isSelected()){
-           pass_signup.setEchoChar((char)0);
+           jTextField_password.setEchoChar((char)0);
         }
         else {
-           pass_signup.setEchoChar('*');
+           jTextField_password.setEchoChar('*');
         }
         
     }//GEN-LAST:event_showpass_signupActionPerformed
@@ -229,7 +248,6 @@ public class signUp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField fname;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -240,12 +258,13 @@ public class signUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField lname;
-    private javax.swing.JPasswordField pass_signup;
+    private javax.swing.JTextField jTextField_email;
+    private javax.swing.JTextField jTextField_firstName;
+    private javax.swing.JTextField jTextField_lastName;
+    private javax.swing.JPasswordField jTextField_password;
     private javax.swing.JRadioButton rbStudent;
     private javax.swing.JRadioButton rbTeacher;
     private javax.swing.ButtonGroup role;
     private javax.swing.JCheckBox showpass_signup;
-    private javax.swing.JTextField upassword;
     // End of variables declaration//GEN-END:variables
 }
