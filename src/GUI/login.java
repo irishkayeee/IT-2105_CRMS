@@ -1,14 +1,31 @@
 
 package GUI;
 
+import Classes.DB;
 import javax.swing.JOptionPane;
 
-public class login extends javax.swing.JFrame {
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
+public class login extends javax.swing.JFrame {
+    
+    
+    
     
     public login() {
         initComponents();
+        
+        
     }
+    
+    
+    
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -119,24 +136,69 @@ public class login extends javax.swing.JFrame {
 
     private void login_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_buttonActionPerformed
         
-        String name = login_email.getText().trim();
-        String password = login_password.getText().trim();
-
-    if (name.isEmpty()) {
-        JOptionPane.showMessageDialog(null, "Please fill out username");
-        // Exit the method to prevent further processing
-    } else if (password.isEmpty())
-    {
-        JOptionPane.showMessageDialog(null, "Please fill out password");
-        // Exit the method to prevent further processing
-    } else if (name.equals("admin") && password.equals("admin")) 
-    {
-        JOptionPane.showMessageDialog(null, "Log in Successful");
+        String username = login_email.getText();
+        String password = String.valueOf(login_password.getPassword());
+        
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        
+        String query ="SELECT * FROM signup WHERE emailAdd = ? AND password = ?";
+        
+        if(username.trim().toLowerCase().equals("username") || password.trim().toLowerCase().equals("password")){
+            JOptionPane.showMessageDialog(null , "Enter a valid username & password" , "Login Failed", 1);
             
         }
-        else
-    {
-            JoptionPane.showMessageDialog(null, "wrong username or password!!","Message", JOptionPane.ERROR_MESSAGE);
+        else {
+            try {
+                 ps = DB.getConnection().prepareStatement(query);
+            ps.setString(1, username);
+            ps.setString(2, password);
+            rs = ps.executeQuery();
+            
+            if (rs.next()){
+               // System.out.println("Login");
+               Homepage hm = new Homepage();
+               hm.setVisible(true);
+               // hide login form
+               this.dispose();
+            }
+            else {
+                JOptionPane.showMessageDialog(null , "Invalid username or password" , "Login Failed", 2);
+            }
+            }
+            catch(SQLException ex){
+                try {
+                    ps = DB.getConnection().prepareStatement(query);
+                } catch (SQLException ex1) {
+                    Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+                try {
+                    ps.setString(1, username);
+                } catch (SQLException ex1) {
+                    Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+                try {
+                    ps.setString(2, password);
+                } catch (SQLException ex1) {
+                    Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+                try {
+                    rs = ps.executeQuery();
+                } catch (SQLException ex1) {
+                    Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+            
+                try {
+                    if (rs.next()){
+                        System.out.println("Login");
+                    }
+                    else {
+                        System.out.println(ex.getMessage());
+                    }   } catch (SQLException ex1) {
+                    Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+                
+            }
             
         }
     }//GEN-LAST:event_login_buttonActionPerformed
@@ -215,5 +277,9 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JCheckBox show_password_button;
     private javax.swing.JButton signup_button;
     // End of variables declaration//GEN-END:variables
+
+    private void Connection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 

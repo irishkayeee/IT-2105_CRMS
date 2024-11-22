@@ -1,5 +1,6 @@
 package GUI;
 
+import Classes.SessionManager;
 import javax.swing.JOptionPane;
 
 public class Homepage extends javax.swing.JFrame {
@@ -7,6 +8,7 @@ public class Homepage extends javax.swing.JFrame {
     public Homepage() {
         initComponents();
     }
+    
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -1187,10 +1189,8 @@ public class Homepage extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Homepage().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Homepage().setVisible(true);
         });
     }
 

@@ -1,4 +1,4 @@
-package GUI;
+package Classes;
 
 /**
  * Manages the user session in the application.
