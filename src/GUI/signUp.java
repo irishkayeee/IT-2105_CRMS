@@ -65,51 +65,54 @@ public class signUp extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("SIGN UP");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("First Name: ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Last Name:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Email: (must end with @educspace.com)");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, -1, 20));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, -1, 20));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Password: (5 to 8 characters long)");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, -1, 20));
+        jLabel5.setText("Password: (must be 5 to 8 characters long)");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 360, -1, 20));
 
         jTextField_firstName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_firstName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jTextField_firstName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_firstNameActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField_firstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 358, 30));
+        getContentPane().add(jTextField_firstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 180, 358, 30));
 
         jTextField_lastName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_lastName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jTextField_lastName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_lastNameActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField_lastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 358, 30));
+        getContentPane().add(jTextField_lastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, 358, 30));
 
         jTextField_email.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField_email.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jTextField_email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_emailActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 330, 358, 30));
+        getContentPane().add(jTextField_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 320, 358, 30));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,7 +128,7 @@ public class signUp extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 460, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(204, 204, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
@@ -137,7 +140,7 @@ public class signUp extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 500, -1, 30));
 
-        showpass_signup.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        showpass_signup.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         showpass_signup.setForeground(new java.awt.Color(255, 255, 255));
         showpass_signup.setText("show password");
         showpass_signup.addActionListener(new java.awt.event.ActionListener() {
@@ -145,12 +148,12 @@ public class signUp extends javax.swing.JFrame {
                 showpass_signupActionPerformed(evt);
             }
         });
-        getContentPane().add(showpass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 440, -1, -1));
+        getContentPane().add(showpass_signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 430, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Select your role to get started!");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, -1, -1));
 
         role.add(rbTeacher);
         rbTeacher.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -161,16 +164,17 @@ public class signUp extends javax.swing.JFrame {
                 rbTeacherActionPerformed(evt);
             }
         });
-        getContentPane().add(rbTeacher, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, -1, -1));
+        getContentPane().add(rbTeacher, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, -1, -1));
 
         role.add(rbStudent);
         rbStudent.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         rbStudent.setForeground(new java.awt.Color(255, 255, 255));
         rbStudent.setText("Student");
-        getContentPane().add(rbStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, -1, -1));
+        getContentPane().add(rbStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, -1, -1));
 
         jTextField_password.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        getContentPane().add(jTextField_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 400, 360, 30));
+        jTextField_password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        getContentPane().add(jTextField_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 390, 360, 30));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login Background.png"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 985, 544));
@@ -215,7 +219,7 @@ public class signUp extends javax.swing.JFrame {
     }
         
      if (!password.isEmpty() && (password.length() < 5 || password.length() > 8)) {
-        throw new Exception("Password must be between 5 and 8 characters.");
+        throw new Exception("Password must be between 5 to 8 characters.");
     }
      
      if (!email.isEmpty() && !email.endsWith("@educspace.com")) {
