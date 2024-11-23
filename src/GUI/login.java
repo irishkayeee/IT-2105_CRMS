@@ -156,7 +156,7 @@ public class login extends javax.swing.JFrame {
             
             if (rs.next()){
                // System.out.println("Login");
-               HomePage Hm = new HomePage();
+               Homepage Hm = new Homepage();
                Hm.setVisible(true);
                // hide login form
                this.dispose();
