@@ -156,8 +156,8 @@ public class login extends javax.swing.JFrame {
             
             if (rs.next()){
                // System.out.println("Login");
-               HomePage hm = new HomePage();
-               hm.setVisible(true);
+               HomePage Hm = new HomePage();
+               Hm.setVisible(true);
                // hide login form
                this.dispose();
             }
@@ -279,6 +279,24 @@ public class login extends javax.swing.JFrame {
 
     private void Connection() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private static class HomePage {
+
+        public HomePage() {
+        }
+
+        private void setVisible(boolean b) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        private void pack() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        private void setLocationRelativeTo(Object object) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
     }
 }
 
