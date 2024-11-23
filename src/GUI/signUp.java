@@ -170,6 +170,11 @@ public class signUp extends javax.swing.JFrame {
         rbStudent.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         rbStudent.setForeground(new java.awt.Color(255, 255, 255));
         rbStudent.setText("Student");
+        rbStudent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbStudentActionPerformed(evt);
+            }
+        });
         getContentPane().add(rbStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, -1, -1));
 
         jTextField_password.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -270,6 +275,10 @@ public class signUp extends javax.swing.JFrame {
     private void rbTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbTeacherActionPerformed
       
     }//GEN-LAST:event_rbTeacherActionPerformed
+
+    private void rbStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbStudentActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbStudentActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {

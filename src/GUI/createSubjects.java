@@ -130,7 +130,7 @@ public class createSubjects extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(this, "Class created successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
                     this.setVisible(false);
                     
-                    Homepage Hm = new Homepage();
+                    HomePage Hm = new HomePage();
                     Hm.setVisible(true);
                     
                 } else {

@@ -25,8 +25,7 @@ public class login extends javax.swing.JFrame {
     }
     
     
-    
-
+   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -157,7 +156,7 @@ public class login extends javax.swing.JFrame {
             
             if (rs.next()){
                // System.out.println("Login");
-               Homepage hm = new Homepage();
+               HomePage hm = new HomePage();
                hm.setVisible(true);
                // hide login form
                this.dispose();
@@ -224,7 +223,7 @@ public class login extends javax.swing.JFrame {
 
     private void login_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login_buttonMouseClicked
         // TODO add your handling code here:
-      Homepage  HomepageFrame  = new  Homepage();
+      HomePage HomepageFrame  = new  HomePage();
       HomepageFrame.setVisible(true);
       HomepageFrame.pack();
       HomepageFrame.setLocationRelativeTo(null);
