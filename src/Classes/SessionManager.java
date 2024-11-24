@@ -1,10 +1,6 @@
 package Classes;
 
-/**
- * Manages the user session in the application.
- * 
- * @author prince dran
- */
+
 public class SessionManager {
     // Store the current user (e.g., username or user ID)
     private static String currentUser = null;

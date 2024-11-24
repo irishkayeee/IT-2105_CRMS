@@ -1,7 +1,7 @@
 
 package GUI;
 
-import Classes.DB;
+import Classes.Form_DatabaseConnector;
 import javax.swing.JOptionPane;
 
 import java.sql.Connection;
@@ -16,14 +16,10 @@ import java.sql.ResultSet;
 public class login extends javax.swing.JFrame {
     
     
-    
-    
     public login() {
         initComponents();
         
-        
     }
-    
     
    
     @SuppressWarnings("unchecked")
@@ -149,7 +145,7 @@ public class login extends javax.swing.JFrame {
         }
         else {
             try {
-                 ps = DB.getConnection().prepareStatement(query);
+                 ps = Form_DatabaseConnector.getConnection().prepareStatement(query);
             ps.setString(1, username);
             ps.setString(2, password);
             rs = ps.executeQuery();
@@ -167,7 +163,7 @@ public class login extends javax.swing.JFrame {
             }
             catch(SQLException ex){
                 try {
-                    ps = DB.getConnection().prepareStatement(query);
+                    ps = Form_DatabaseConnector.getConnection().prepareStatement(query);
                 } catch (SQLException ex1) {
                     Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex1);
                 }
@@ -223,7 +219,7 @@ public class login extends javax.swing.JFrame {
 
     private void login_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login_buttonMouseClicked
         // TODO add your handling code here:
-      HomePage HomepageFrame  = new  HomePage();
+      Homepage HomepageFrame  = new  Homepage();
       HomepageFrame.setVisible(true);
       HomepageFrame.pack();
       HomepageFrame.setLocationRelativeTo(null);
@@ -276,27 +272,5 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JCheckBox show_password_button;
     private javax.swing.JButton signup_button;
     // End of variables declaration//GEN-END:variables
-
-    private void Connection() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    private static class HomePage {
-
-        public HomePage() {
-        }
-
-        private void setVisible(boolean b) {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        private void pack() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        private void setLocationRelativeTo(Object object) {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-    }
 }
 

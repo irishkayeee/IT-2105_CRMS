@@ -7,11 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author ASUS
- */
-public class Signup {
+public class Form_SignUp {
 
         private int id;
         private String firstName;
@@ -20,11 +16,11 @@ public class Signup {
         private String password;
         private String role_;
        
-        public Signup(){
+        public Form_SignUp(){
             
         }
         
-    public Signup(int id, String firstName, String lastName, String email, String password, String role_) {
+    public Form_SignUp(int id, String firstName, String lastName, String email, String password, String role_) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -88,10 +84,10 @@ public class Signup {
          try {
              
              
-             ps = DB.getConnection().prepareStatement(query);
+             ps = Form_DatabaseConnector.getConnection().prepareStatement(query);
              rs = ps.executeQuery();
                      } catch (SQLException ex) {
-             Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
+             Logger.getLogger(Form_SignUp.class.getName()).log(Level.SEVERE, null, ex);
          }
          return rs;
      }
@@ -102,7 +98,7 @@ public class Signup {
         PreparedStatement ps;
 
         try {
-            ps = DB.getConnection().prepareStatement(insertQuery);
+            ps = Form_DatabaseConnector.getConnection().prepareStatement(insertQuery);
             ps.setString(1, _firstName);
             ps.setString(2, _lastName);
             ps.setString(3, _email);
@@ -116,7 +112,7 @@ public class Signup {
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Form_SignUp.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage(), "Database Error", JOptionPane.ERROR_MESSAGE);
         }
     }

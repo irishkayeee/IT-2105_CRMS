@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  *
  * @asus
  */
-public class DB {
+public class Form_DatabaseConnector {
     // Download the Java MySQL connector -> https://dev.mysql.com/downloads/connector/j/
 
     private static final String serverName = "localhost";
@@ -19,7 +19,7 @@ public class DB {
     private static final int portNumber = 3306;
     private static final String pass = ""; 
 
-    private static final Logger logger = Logger.getLogger(DB.class.getName());
+    private static final Logger logger = Logger.getLogger(Form_DatabaseConnector.class.getName());
 
     // Function to create and return the connection
     public static Connection getConnection() {

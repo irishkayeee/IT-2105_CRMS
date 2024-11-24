@@ -4,12 +4,12 @@ import Classes.SessionManager;
 import javax.swing.JOptionPane;
 
 public class Homepage extends javax.swing.JFrame {
-
+   
     public Homepage() {
         initComponents();
     }
     
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -85,14 +85,9 @@ public class Homepage extends javax.swing.JFrame {
         donepanel = new javax.swing.JPanel();
         notifications_panel = new javax.swing.JPanel();
         Subjects_panels = new javax.swing.JPanel();
-        subjectbtn6 = new javax.swing.JButton();
-        subjectbtn5 = new javax.swing.JButton();
-        subjectbtn3 = new javax.swing.JButton();
-        subjectbtn7 = new javax.swing.JButton();
         subjectbtn1 = new javax.swing.JButton();
-        subjectbtn2 = new javax.swing.JButton();
-        subjectbtn4 = new javax.swing.JButton();
-        subjectbtn8 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        subjects_table = new javax.swing.JTable();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -896,51 +891,6 @@ public class Homepage extends javax.swing.JFrame {
         Subjects_panels.setPreferredSize(new java.awt.Dimension(985, 544));
         Subjects_panels.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        subjectbtn6.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn6.setText("OOP");
-        subjectbtn6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        subjectbtn6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectbtn6ActionPerformed(evt);
-            }
-        });
-        Subjects_panels.add(subjectbtn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, 140));
-
-        subjectbtn5.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn5.setText("PHYSICS");
-        subjectbtn5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        subjectbtn5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectbtn5ActionPerformed(evt);
-            }
-        });
-        Subjects_panels.add(subjectbtn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 130, 140));
-
-        subjectbtn3.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn3.setText("DBMS");
-        subjectbtn3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn3.setPreferredSize(new java.awt.Dimension(100, 100));
-        subjectbtn3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        subjectbtn3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectbtn3ActionPerformed(evt);
-            }
-        });
-        Subjects_panels.add(subjectbtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, 130, 140));
-
-        subjectbtn7.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn7.setText("ASEAN");
-        subjectbtn7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn7.setPreferredSize(new java.awt.Dimension(100, 100));
-        subjectbtn7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        Subjects_panels.add(subjectbtn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 130, 140));
-
         subjectbtn1.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         subjectbtn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
         subjectbtn1.setText("ADV.COMPROG");
@@ -949,39 +899,22 @@ public class Homepage extends javax.swing.JFrame {
         subjectbtn1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         Subjects_panels.add(subjectbtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 130, 140));
 
-        subjectbtn2.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn2.setText("NETWORKING");
-        subjectbtn2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn2.setPreferredSize(new java.awt.Dimension(100, 100));
-        subjectbtn2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        subjectbtn2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectbtn2ActionPerformed(evt);
+        subjects_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Class Name", "Section", "Subject", "Room"
+            }
+        ));
+        subjects_table.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                subjects_tableMouseClicked(evt);
             }
         });
-        Subjects_panels.add(subjectbtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 130, 140));
+        jScrollPane1.setViewportView(subjects_table);
 
-        subjectbtn4.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn4.setText("PATHFIT");
-        subjectbtn4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn4.setPreferredSize(new java.awt.Dimension(100, 100));
-        subjectbtn4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        subjectbtn4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectbtn4ActionPerformed(evt);
-            }
-        });
-        Subjects_panels.add(subjectbtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 130, 140));
-
-        subjectbtn8.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        subjectbtn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/folder (1).png"))); // NOI18N
-        subjectbtn8.setText("DISCRETE MATH");
-        subjectbtn8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        subjectbtn8.setPreferredSize(new java.awt.Dimension(100, 100));
-        subjectbtn8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        Subjects_panels.add(subjectbtn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 130, 140));
+        Subjects_panels.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 510, 400));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1065,26 +998,6 @@ public class Homepage extends javax.swing.JFrame {
       createclass_buttonFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void subjectbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_subjectbtn6ActionPerformed
-
-    private void subjectbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_subjectbtn2ActionPerformed
-
-    private void subjectbtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_subjectbtn3ActionPerformed
-
-    private void subjectbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_subjectbtn5ActionPerformed
-
-    private void subjectbtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectbtn4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_subjectbtn4ActionPerformed
-
     private void about_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_about_buttonMouseClicked
             jp1.setVisible(true);
             jp2.setVisible(false);
@@ -1163,6 +1076,10 @@ public class Homepage extends javax.swing.JFrame {
         
     }//GEN-LAST:event_logout_buttonMouseClicked
 
+    private void subjects_tableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subjects_tableMouseClicked
+        
+    }//GEN-LAST:event_subjects_tableMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -1185,6 +1102,12 @@ public class Homepage extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Homepage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -1251,6 +1174,7 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel jp1;
     private javax.swing.JPanel jp2;
     private javax.swing.JPanel jp3;
@@ -1264,13 +1188,7 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JPanel notifications_panel;
     private javax.swing.JPanel privacy_button;
     private javax.swing.JButton subjectbtn1;
-    private javax.swing.JButton subjectbtn2;
-    private javax.swing.JButton subjectbtn3;
-    private javax.swing.JButton subjectbtn4;
-    private javax.swing.JButton subjectbtn5;
-    private javax.swing.JButton subjectbtn6;
-    private javax.swing.JButton subjectbtn7;
-    private javax.swing.JButton subjectbtn8;
+    private javax.swing.JTable subjects_table;
     private javax.swing.JPanel to_do;
     private javax.swing.JPanel todo_panel;
     private javax.swing.JPanel vission_button;

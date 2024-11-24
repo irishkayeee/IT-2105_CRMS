@@ -1,6 +1,6 @@
 package GUI;
 
-import Classes.DB;
+import Classes.Form_DatabaseConnector;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -44,6 +44,11 @@ public class createSubjects extends javax.swing.JFrame {
 
         class_name.setBackground(new java.awt.Color(249, 249, 249));
         class_name.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), null));
+        class_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                class_nameActionPerformed(evt);
+            }
+        });
         getContentPane().add(class_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 510, 40));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -134,7 +139,7 @@ public class createSubjects extends javax.swing.JFrame {
             // SQL query to insert data into the database
             String query = "INSERT INTO createclass (className, section, subject, room, classcode) VALUES (?, ?, ?, ?, ?)";
             
-            try (Connection conn = DB.getConnection(); 
+            try (Connection conn = Form_DatabaseConnector.getConnection(); 
                 PreparedStatement pst = conn.prepareStatement(query)) {
                 
                 // Set the parameters in the query
@@ -150,9 +155,14 @@ public class createSubjects extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(this, "Class created successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
                     this.setVisible(false);
                     
-                    Homepage Hm = new Homepage();
+                    HomePage Hm = new HomePage();
+                    HomePage.loadClassDataToTable();
+                    
+                    this.setVisible(false);
                     Hm.setVisible(true);
                     
+                    
+             
                 } else {
                     JOptionPane.showMessageDialog(this, "Failed to create class", "Error", JOptionPane.ERROR_MESSAGE);
                     
@@ -162,6 +172,8 @@ public class createSubjects extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Database error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
+    
+        
     
     }//GEN-LAST:event_btnCreateActionPerformed
 
@@ -205,6 +217,10 @@ private void saveClassCodeToDatabase(String classCode) {
     }
     }//GEN-LAST:event_class_codeActionPerformed
 
+    private void class_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_class_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_class_nameActionPerformed
+
   
     public static void main(String args[]) {
        
@@ -233,6 +249,10 @@ private void saveClassCodeToDatabase(String classCode) {
     // End of variables declaration//GEN-END:variables
 
     private static class HomePage {
+
+        private static void loadClassDataToTable() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
 
         public HomePage() {
         }

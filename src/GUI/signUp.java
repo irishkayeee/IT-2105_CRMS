@@ -1,6 +1,6 @@
 package GUI;
 
-import Classes.Signup;
+import Classes.Form_SignUp;
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 public class signUp extends javax.swing.JFrame {
 
-     Signup signup = new Signup();
+     Form_SignUp signup = new Form_SignUp();
 
     public signUp() {
         initComponents();
@@ -248,7 +248,7 @@ public class signUp extends javax.swing.JFrame {
     }
     if (verify() && role_ != null && password.length() >= 5 && password.length() <= 8 && email.endsWith("@educspace.com")&& !firstName.isEmpty() && !lastName.isEmpty() && email.contains(firstName.toLowerCase()) && email.contains(lastName.toLowerCase())) {
         
-    Signup signup = new Signup();
+    Form_SignUp signup = new Form_SignUp();
     signup.createAccount(firstName, lastName, email, password, role_);
 }
 
